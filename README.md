@@ -3,3 +3,7 @@ Clevo custom fan control
 
 Original post: http://tieba.baidu.com/p/4872453181
 
+Uninstall Clevo Control Center first
+
+Tested on Clevo P751DM2, Windows 10 1803
+
