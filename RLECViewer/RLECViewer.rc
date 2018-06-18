@@ -1,0 +1,384 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\RLECViewer.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\RLECViewer.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 192, 81
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About RLECViewer"
+FONT 9, "ËÎÌו"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,21
+    LTEXT           "RLECViewer Ver 2.4",IDC_STATIC,40,12,88,8,SS_NOPREFIX
+    LTEXT           "RioLee Copyright(C) 2016",IDC_STATIC,40,26,119,8
+    DEFPUSHBUTTON   "OK",IDOK,135,7,50,14,WS_GROUP
+    LTEXT           "",IDC_BUILD_TEXT,40,66,119,8
+    LTEXT           "Bug report: rio@cctvmg.com",IDC_STATIC,40,40,105,8
+    LTEXT           "Translation: Zuyang",IDC_STATIC,40,53,77,8
+END
+
+IDD_RLECVIEWER_DIALOG DIALOGEX 0, 0, 183, 67
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "RLECViewer"
+FONT 9, "ËÎÌו"
+BEGIN
+    CONTROL         "Start on Boot",IDC_CHECK_AUTORUN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,51,68,10
+    PUSHBUTTON      "Reset",IDC_BTN_RESET,7,23,50,14,NOT WS_VISIBLE
+    DEFPUSHBUTTON   "OK",IDOK,7,7,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Cancel",IDCANCEL,60,7,50,14,NOT WS_VISIBLE
+    LTEXT           "",IDC_STATIC_INFO,7,7,169,39,0,WS_EX_STATICEDGE
+    CTEXT           "",IDC_STATIC_INFO2,148,37,28,8,SS_CENTERIMAGE | NOT 
+                    WS_VISIBLE,WS_EX_STATICEDGE
+    PUSHBUTTON      "Setting",IDC_BTN_CONFIG,107,48,48,14,BS_FLAT
+    LTEXT           "V2.4",IDC_STATIC,159,51,17,8
+END
+
+IDD_DIALOG_CONFIG DIALOGEX 0, 0, 242, 324
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Setting"
+FONT 9, "ËÎÌו"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,13,228,36
+    GROUPBOX        "",IDC_STATIC,7,54,228,218
+    CONTROL         "Auto",IDC_RADIO_MODEAUTO,"Button",BS_AUTORADIOBUTTON,11,
+                    13,32,10
+    CONTROL         "Manual",IDC_RADIO_MODEMANULE,"Button",
+                    BS_AUTORADIOBUTTON,11,54,40,10
+    EDITTEXT        IDC_EDIT_TEMPLIMIT,131,27,26,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "OK",IDOK,132,303,50,14,BS_FLAT
+    PUSHBUTTON      "Cancel",IDCANCEL,185,303,50,14,BS_FLAT
+    LTEXT           "Target Max Temp:",IDC_STATIC,63,29,65,8
+    LTEXT           "C",IDC_STATIC,163,30,8,8
+    LTEXT           "Temp(C)",IDC_STATIC,34,69,29,8
+    LTEXT           "CPU Fan(%)",IDC_STATIC_CPU,80,69,41,8
+    LTEXT           ">85",IDC_STATIC,35,90,13,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,10,82,220,1,
+                    WS_EX_STATICEDGE
+    LTEXT           "VGA1 Fan(%)",IDC_STATIC_VGA1,131,69,45,8
+    LTEXT           "VGA2 Fan(%)",IDC_STATIC_VGA2,184,69,45,8
+    EDITTEXT        IDC_EDIT_CPU0,83,90,27,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_CPU1,83,108,27,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "80",IDC_STATIC,35,109,9,8
+    LTEXT           "75",IDC_STATIC,35,127,9,8
+    LTEXT           "70",IDC_STATIC,35,145,9,8
+    LTEXT           "65",IDC_STATIC,35,163,9,8
+    LTEXT           "60",IDC_STATIC,35,181,9,8
+    LTEXT           "55",IDC_STATIC,35,200,9,8
+    LTEXT           "50",IDC_STATIC,35,218,9,8
+    LTEXT           "45",IDC_STATIC,35,236,9,8
+    LTEXT           "<40",IDC_STATIC,35,254,13,8
+    EDITTEXT        IDC_EDIT_CPU2,83,126,27,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_CPU3,83,144,27,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_CPU4,83,162,27,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_CPU5,83,180,27,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_CPU6,83,199,27,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_CPU7,83,217,27,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_CPU8,83,235,27,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_CPU9,83,253,27,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_VGA10,137,89,27,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_VGA11,137,108,27,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_VGA12,137,125,27,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_VGA13,137,144,27,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_VGA14,137,161,27,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_VGA15,137,180,27,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_VGA16,137,198,27,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_VGA17,137,217,27,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_VGA18,137,234,27,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_VGA19,137,253,27,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_VGA20,190,89,27,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_VGA21,190,108,27,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_VGA22,190,125,27,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_VGA23,190,144,27,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_VGA24,190,161,27,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_VGA25,190,180,27,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_VGA26,190,198,27,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_VGA27,190,217,27,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_VGA28,190,234,27,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_VGA29,190,253,27,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "Reset",IDC_BTN_DEFAULT,7,303,46,14,BS_FLAT
+    LTEXT           "1.",IDC_STATIC,14,90,9,8
+    LTEXT           "2.",IDC_STATIC,14,109,9,8
+    LTEXT           "3.",IDC_STATIC,14,127,9,8
+    LTEXT           "4.",IDC_STATIC,14,145,9,8
+    LTEXT           "5.",IDC_STATIC,14,163,9,8
+    LTEXT           "6.",IDC_STATIC,14,181,9,8
+    LTEXT           "7.",IDC_STATIC,14,199,9,8
+    LTEXT           "8.",IDC_STATIC,14,217,9,8
+    LTEXT           "9.",IDC_STATIC,14,235,9,8
+    LTEXT           "10.",IDC_STATIC,14,254,9,8
+    CONTROL         "Detect Fan Amount",IDC_CHECK_AUTOFANCOUNT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,275,84,10
+    EDITTEXT        IDC_EDIT_FANCOUNT,93,273,28,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,7,290,228,1,
+                    WS_EX_STATICEDGE
+    LTEXT           "(1-3)",IDC_STATIC_FANCOUNTINFO,125,275,21,8
+    CONTROL         "OverLevelCooling",IDC_CHECK_COOLOVERLEVEL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,155,275,80,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "RLECViewer\0"
+            VALUE "FileVersion", "1.0.0.1\0"
+            VALUE "InternalName", "RLECViewer\0"
+            VALUE "LegalCopyright", "RioLee Copyright(C) 2016\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "RLECViewer.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "RLECViewer\0"
+            VALUE "ProductVersion", "1.0.0.1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 185
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+
+    IDD_RLECVIEWER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 176
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+
+    IDD_DIALOG_CONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 235
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 317
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+1                       24      DISCARDABLE     "res\\RLECViewer.exe.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_TRAY         BITMAP  DISCARDABLE     "res\\Tray.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_TRAY MENU DISCARDABLE 
+BEGIN
+    POPUP "Right Menu"
+    BEGIN
+        MENUITEM "Open(&R)",                    ID_RESTORE
+        MENUITEM "About(&A)",                   ID_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "Exit(&X)",                    IDCANCEL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "About RLECViewer(&A)..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\RLECViewer.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

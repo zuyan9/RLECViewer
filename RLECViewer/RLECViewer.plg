@@ -1,0 +1,64 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: RLECViewer - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/RLECViewer.res" /d "_DEBUG" "D:\FanC\RLECViewer_Src\RLECViewer\RLECViewer.rc"" 
+Creating temporary file "C:\Users\Zuyang\AppData\Local\Temp\RSP3A5C.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/RLECViewer.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\FanC\RLECViewer_Src\RLECViewer\NewMenu.cpp"
+"D:\FanC\RLECViewer_Src\RLECViewer\NewMenuBar.cpp"
+"D:\FanC\RLECViewer_Src\RLECViewer\Ntray.cpp"
+"D:\FanC\RLECViewer_Src\RLECViewer\RLConfigDlg.cpp"
+"D:\FanC\RLECViewer_Src\RLECViewer\RLECViewer.cpp"
+"D:\FanC\RLECViewer_Src\RLECViewer\RLECViewerDlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\Zuyang\AppData\Local\Temp\RSP3A5C.tmp" 
+Creating temporary file "C:\Users\Zuyang\AppData\Local\Temp\RSP3A6C.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/RLECViewer.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\FanC\RLECViewer_Src\RLECViewer\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Zuyang\AppData\Local\Temp\RSP3A6C.tmp" 
+Creating temporary file "C:\Users\Zuyang\AppData\Local\Temp\RSP3A6D.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/RLECViewer.pdb" /debug /machine:I386 /out:"..\bin(Debug)/RLECViewer.exe" /pdbtype:sept 
+.\Debug\NewMenu.obj
+.\Debug\NewMenuBar.obj
+.\Debug\Ntray.obj
+.\Debug\RLConfigDlg.obj
+.\Debug\RLECViewer.obj
+.\Debug\RLECViewerDlg.obj
+.\Debug\StdAfx.obj
+.\Debug\RLECViewer.res
+]
+Creating command line "link.exe @C:\Users\Zuyang\AppData\Local\Temp\RSP3A6D.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+NewMenu.cpp
+NewMenuBar.cpp
+Ntray.cpp
+RLConfigDlg.cpp
+RLECViewer.cpp
+RLECViewerDlg.cpp
+D:\FanC\RLECViewer_Src\RLECViewer\RLECViewerDlg.cpp(575) : warning C4550: expression evaluates to a function which is missing an argument list
+D:\FanC\RLECViewer_Src\RLECViewer\RLECViewerDlg.cpp(604) : warning C4550: expression evaluates to a function which is missing an argument list
+D:\FanC\RLECViewer_Src\RLECViewer\RLECViewerDlg.cpp(636) : warning C4550: expression evaluates to a function which is missing an argument list
+D:\FanC\RLECViewer_Src\RLECViewer\RLECViewerDlg.cpp(662) : warning C4550: expression evaluates to a function which is missing an argument list
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+RLECViewer.exe - 0 error(s), 4 warning(s)
+</pre>
+</body>
+</html>
