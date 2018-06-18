@@ -5,5 +5,7 @@ Original post: http://tieba.baidu.com/p/4872453181
 
 Uninstall Clevo Control Center first
 
-Tested on Clevo P751DM2, Windows 10 1803
+Tested on Clevo P751DM2, Windows 10 1803 with UEFI.
+
+Developed in VC6.0 (I know...)
 
