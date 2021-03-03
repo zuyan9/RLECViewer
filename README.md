@@ -11,3 +11,6 @@ Tested on Clevo P751DM2, Windows 10 1803 with UEFI.
 
 Developed in VC6.0 (I know...)
 
+## WARNING
+
+Windows Release is detected as Trojan in multiple antivirus software (see [issue #3](/../../issues/3) and [issue #4](/../../issues/4)), use (or compile from the source code) at your own risk.
